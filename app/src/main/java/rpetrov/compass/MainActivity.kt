@@ -4,12 +4,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 /**
+ *
+ * гит: ветки, pr, мержи м так далее. Посмотрим, как можно упростить себе работу.
+ * Инструменты Android Studio:
+ * дебаггер,
+ * code-инспектор,
+ * layout-инспектор.
+ *
+ *
  * Вью. Image, Text, languages, tablet
  * Сенсоры (https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview)
  * onResume / on Start, dialog
  * Анимация
  * Шеринг
- * Denug Tools
  */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
