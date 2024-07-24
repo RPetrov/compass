@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         // verbose, debug, info, warn, error, fatal error
         // ->
         Log.w("MY_TAF", "SOME LOG")
+        Log.w("MY_TAF", "SOME LOG 2")
 
 
 
