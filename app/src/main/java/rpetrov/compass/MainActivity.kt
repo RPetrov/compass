@@ -16,9 +16,8 @@ import android.os.Bundle
  * Вью. Image, Text, languages, tablet
  * Сенсоры (https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview)
  * onResume / on Start, dialog
- * Анимация
- * Шеринг
- * Denug Tools
+
+
  */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,12 +26,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun shareText(text: String) {
+    fun shareText() {
         val intent = Intent().apply {
-            action = Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT, text)
-            type = "text/plain"
-        }
-        startActivity(Intent.createChooser(intent, "Current orientation"))
+            action = Intent.ACTION_CALL
+            type = "application/vnd.ms-excel"        }
+        startActivity(Intent.createChooser(intent, "TEXT"))
     }
 }
