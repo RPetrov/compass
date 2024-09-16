@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-
     fun shareText() {
         val intent = Intent().apply {
             action = Intent.ACTION_CALL
