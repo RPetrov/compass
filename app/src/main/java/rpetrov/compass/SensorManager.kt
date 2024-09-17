@@ -6,8 +6,9 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity.SENSOR_SERVICE
 
-
 internal class SensorManager(val context: Context) {
+
+    private val list = mutableListOf<SensorEventListener>()
 
     val sensorManager = context.getSystemService(SENSOR_SERVICE) as SensorManager
 
@@ -17,9 +18,11 @@ internal class SensorManager(val context: Context) {
         sensorManager.registerListener(
             listener, sensor, SensorManager.SENSOR_DELAY_NORMAL
         )
+        list.add(listener)
     }
 
     fun unRegisterListener(listener: SensorEventListener) {
         sensorManager.unregisterListener(listener)
+        list.remove(listener)
     }
 }

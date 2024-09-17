@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Compass" parent="Base.Theme.Compass"/>
+    <style name="Theme.Compass" parent="Base.Theme.Compass">
+<!--        <item name="android:background">@color/background</item>-->
+    </style>
 </resources>
